@@ -1,0 +1,23 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Object Obituaries</title>
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0f1410 linear-gradient(#1a2a22,#0b0f0c);color:#e8e2d0;font-family:'EB Garamond',serif;min-height:100vh}
+main{max-width:480px;margin:auto;padding:16px}
+h1{font-family:UnifrakturMaguntia;font-size:2.6rem;text-align:center;margin:8px 0 0;color:#d8cfb0}
+.sub{text-align:center;font-style:italic;color:#9a9480;margin-top:2px}
+.form,.paper{background:#f1e9d2;color:#2a2418;border-radius:4px;padding:16px;margin:14px 0;box-shadow:0 6px 24px #000a}
+label{display:block;font-weight:bold;margin-top:8px}input,select{width:100%;box-sizing:border-box;font:inherit;font-size:1.05rem;padding:8px;border:1px solid #a89870;background:#fffaf0;border-radius:4px}
+button{font:inherit;font-size:1.1rem;width:100%;padding:10px;margin-top:12px;border:0;border-radius:4px;background:#3b2f22;color:#f1e9d2;cursor:pointer}
+.paper h2{font-family:UnifrakturMaguntia;text-align:center;font-size:1.8rem;margin:0}.paper .dates{text-align:center;font-style:italic;border-bottom:1px solid #a89870;padding-bottom:6px}.paper p{font-size:1.1rem;line-height:1.45}
+.yard{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;padding:20px 6px 30px;background:linear-gradient(transparent 70%,#1f3a25 70%);border-radius:8px}
+.stone{background:linear-gradient(#9a9a92,#6c6c66);border-radius:50% 50% 6px 6px/40% 40% 6px 6px;color:#222;text-align:center;padding:16px 4px 10px;font-size:.8rem;cursor:pointer;box-shadow:0 4px 0 #333;min-height:80px}
+.stone b{display:block;font-size:.9rem;word-break:break-word}.stone:before{content:'✝';display:block;font-size:1rem}
+h3{font-family:UnifrakturMaguntia;font-size:1.6rem;text-align:center;margin:20px 0 0}
+</style></head><body><main>
+<h1>Object Obituaries</h1><div class="sub">Gone, but not forgotten. Mostly.</div>
+<div class="form"><label>The departed</label><input id="name" placeholder="My Nokia phone"><label>Years together</label><input id="yrs" type="number" min="0" step="0.5" value="2">
+<label>Cause of death</label><select id="cause"><option>dropped</option><option>drowned</option><option>simply wore out</option><option>was thrown away</option><option>was lost forever</option><option>burned</option><option>was sat on</option><option>was eaten by the dog</option><option>mysterious circumstances</option></select>
+<label>Defining trait</label><input id="trait" placeholder="always overheated"><button id="write">✒️ Write obituary</button></div>
+<div id="out"></div>
+<h3>The Graveyard</h3><div class="yard" id="yard"></div>
+</main><script src="app.js"></script></body></html>
